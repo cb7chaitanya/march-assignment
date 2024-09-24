@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Postmate
 
-## Getting Started
+Postmate is a responsive social media application built using Next.js and TypeScript that supports basic CRUD operations for posts, users, and comments. The app interacts with the JSONPlaceholder API for demonstration purposes and can be easily integrated with a real API for production use.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* #### Responsive Design: Optimized for both desktop and mobile devices.
+* #### CRUD Operations: Create, read, update, and delete posts. View and manage comments specific to each post, view user details.
+* #### Gallery Page: Displays a collection of placeholder photos, fetched from the JSON Placeholder API.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* #### User Management: Displays all user details fetched from the API.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Pages
+* #### Landing Page: Introduction and navigation to key sections.
+* #### Posts Page: List of all posts with the ability to create new posts.
+* #### Post Details Page: View post details with comments, and options to edit or delete the post.
+* #### Users Page: Displays all user details.
+* #### Gallery Page: Showcases photos (currently from the dummy API, replaceable with real data).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation & Setup
 
-## Learn More
+To get the project running locally, follow these steps
 
-To learn more about Next.js, take a look at the following resources:
+### Pre Requisites
+* #### Node.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Clone the repository
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    git clone https://github.com/cb7chaitanya/march-assignment
 
-## Deploy on Vercel
+#### Install Dependencies
+    npm i 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Running the application 
+    npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The app will be running on http://localhost:3000
+
+#### Creating an optimized production build
+    npm run build
+
+#### Starting production server
+    npm start
